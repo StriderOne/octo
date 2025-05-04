@@ -16,9 +16,9 @@ def get_config(config_string="full,multimodal"):
     # and second image key should be the wrist view (None if not used)
 
     FINETUNING_KWARGS = {
-        "name": "bridge_dataset",
-        "data_dir": "./tests/debug_dataset",
-        "image_obs_keys": {"primary": "image_0", "wrist": None},
+        "name": "pick_dataset",
+        "data_dir": "/home/homa/tensorflow_datasets",
+        "image_obs_keys": {"primary": "image", "wrist": "wrist_image"},
         "proprio_obs_key": "proprio",
         "language_key": "language_instruction",
         "action_proprio_normalization_type": "normal",
@@ -53,7 +53,7 @@ def get_config(config_string="full,multimodal"):
     config = dict(
         pretrained_path=placeholder(str),
         pretrained_step=placeholder(int),
-        batch_size=256,
+        batch_size=1,
         shuffle_buffer_size=10000,
         num_steps=max_steps,
         log_interval=100,

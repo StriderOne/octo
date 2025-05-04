@@ -59,6 +59,11 @@ OXE_DATASET_CONFIGS = {
         "proprio_encoding": ProprioEncoding.POS_EULER,
         "action_encoding": ActionEncoding.EEF_POS,
     },
+    "pick_dataset": {
+        "image_obs_keys": {"primary": "image", "wrist": "wrist_image"},
+        "proprio_encoding": ProprioEncoding.POS_EULER,
+        "action_encoding": ActionEncoding.EEF_POS,
+    },
     "taco_play": {
         "image_obs_keys": {
             "primary": "rgb_static",
