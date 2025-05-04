@@ -17,7 +17,7 @@ def get_config(config_string="full,multimodal"):
 
     FINETUNING_KWARGS = {
         "name": "pick_dataset",
-        "data_dir": "/home/homa/tensorflow_datasets",
+        "data_dir": "/",
         "image_obs_keys": {"primary": "image", "wrist": "wrist_image"},
         "proprio_obs_key": "proprio",
         "language_key": "language_instruction",

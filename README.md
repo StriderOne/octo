@@ -1,3 +1,16 @@
+# Update
+
+```
+pip install gdown
+gdown --folder https://drive.google.com/drive/folders/1ZHp_RrR6Pnq-_GpFFLAcT7SjZJFC90aO?usp=sharing
+git clone https://github.com/StriderOne/octo.git
+cd octo
+docker build -t octo .
+docker run -it --gpus all /
+  -v ../pick_dataset:/app/pick_dataset octo bash
+```
+
+
 # Octo
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/octo-models/octo/blob/main/examples/01_inference_pretrained.ipynb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
